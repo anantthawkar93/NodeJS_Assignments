@@ -1,6 +1,6 @@
+const path = require("path");
+
 let users = [{name:"tom", email:"tom@asfas.com", creation_date:"12-dec-2001", username:"tom123"}];
-
-
 //to show all users in json
 exports.indexController = function(request, response){
 	response.json(users);

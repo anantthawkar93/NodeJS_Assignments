@@ -1,3 +1,10 @@
+const path = require("path");
+
+let todos = [{name:"read book", status:"complete"},
+    {name:"goto gym", status:"incomplete"},
+    {name:"goto sleep", status:"incomplete"},
+];
+
 exports.initialController = function(request, response){
 	response.json(todos);
 }

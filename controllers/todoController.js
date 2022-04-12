@@ -3,9 +3,6 @@
 2. save the created author object
 3. to fetch the data from MongoDB
 */
-
-
-
 const Todo = require("../models/todo");
 
 //To create a Todo object.
