@@ -13,6 +13,9 @@ var userRouter = require('./routes/user');
 var authorRouter = require('./routes/author');
 var bookRouter = require('./routes/book');
 var old_TodoRouter = require('./routes/old_Todo');
+var forumRouter = require('/routes/forum');
+var newForumRouter = require('/routes/newForum');
+
 var app = express();
 
 // view engine setup
@@ -31,6 +34,9 @@ app.use('/user', userRouter);
 app.use('/author', authorRouter);
 app.use('/book', bookRouter);
 app.use('/', old_TodoRouter);
+app.use('/forum', forumRouter);
+app.use('/newRouter', newForumRouter);
+
 
 //For connecting mongo Url
 let mongoConnUrl = "mongodb://localhost/marchnode22";
